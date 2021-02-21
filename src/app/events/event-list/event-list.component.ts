@@ -18,4 +18,8 @@ export class EventListComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  registerEvent(event) {
+    console.log(event);
+  }
 }
