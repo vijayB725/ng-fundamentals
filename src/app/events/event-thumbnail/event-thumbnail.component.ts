@@ -11,4 +11,8 @@ export class EventThumbnailComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  handleRegister() {
+    alert("registered for event");
+  }
 }
