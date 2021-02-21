@@ -17,4 +17,9 @@ export class EventThumbnailComponent implements OnInit {
     alert("registered for event");
     this.register.emit(this.events.name);
   }
+
+  // call this function from parent component using reference variable #thumbnailCmp
+  logEvent() {
+    console.log("call from parent cmp using reference variable");
+  }
 }

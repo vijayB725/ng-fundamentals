@@ -1,5 +1,8 @@
 <H1> Angular Events</H1>
 <hr>
 <div>
-	<app-event-thumbnail (register)="registerEvent($event)" [events]="eventList"></app-event-thumbnail>
+	<app-event-thumbnail #thumbnailCmp (register)="registerEvent($event)" [events]="eventList"></app-event-thumbnail>
+
 </div>
+<hr>
+<button class="btn btn-primary" (click)="thumbnailCmp.logEvent()">logEvent</button>
