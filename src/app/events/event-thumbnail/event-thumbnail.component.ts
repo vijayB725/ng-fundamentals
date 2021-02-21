@@ -8,6 +8,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 export class EventThumbnailComponent implements OnInit {
   @Input() events: any;
   @Output() register = new EventEmitter();
+  // access property from child component in parent component using reference variable
+  property: any = "thumbnail Property";
 
   constructor() {}
 
