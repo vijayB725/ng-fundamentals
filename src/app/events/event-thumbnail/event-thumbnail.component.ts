@@ -15,6 +15,6 @@ export class EventThumbnailComponent implements OnInit {
 
   handleRegister() {
     alert("registered for event");
-    this.register.emit("register");
+    this.register.emit(this.events.name);
   }
 }
