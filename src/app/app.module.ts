@@ -6,6 +6,7 @@ import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 import { EventListComponent } from "./events/event-list/event-list.component";
 import { EventThumbnailComponent } from "./events/event-thumbnail/event-thumbnail.component";
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -13,7 +14,8 @@ import { EventThumbnailComponent } from "./events/event-thumbnail/event-thumbnai
     AppComponent,
     HelloComponent,
     EventListComponent,
-    EventThumbnailComponent
+    EventThumbnailComponent,
+    NavComponent
   ],
   bootstrap: [AppComponent]
 })
