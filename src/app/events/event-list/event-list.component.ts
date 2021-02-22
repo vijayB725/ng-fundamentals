@@ -25,11 +25,7 @@ export class EventListComponent implements OnInit {
       date: "02/25/2021",
       time: "12:00",
       price: 1000.0,
-      location: {
-        address: 'The Technology Learning Center',
-        city: 'London',
-        country: 'England'
-      }
+      onlineUrl: 'https://ng-nl.org/',
     },
     {
       id: 4,

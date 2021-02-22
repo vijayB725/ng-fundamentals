@@ -1,11 +1,12 @@
 <div>
 	<div>
-		<h3>{{events.name}}</h3>
+		<h3>{{events?.name}}</h3>
 		<div>Date: {{events?.date}}</div>
 		<div>Time: {{events?.time}}</div>
 		<div>Price: ${{events?.price}}</div>
+    <div>Online Url: {{events?.onlineUrl}}</div>
 		<div>
-			<span>Location: {{events.location.address}}, {{events.location.city}}, {{events.location.country}}</span>
+			<span>Location: {{events?.location?.address}}, {{events?.location?.city}}, {{events?.location?.country}}</span>
 		</div>
 		<button class="btn btn-primary" (click)="handleRegister()">Register</button>
 	</div>
