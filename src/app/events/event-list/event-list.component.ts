@@ -14,9 +14,9 @@ export class EventListComponent implements OnInit {
       time: "09:00:00",
       price: 599.99,
       location: {
-        address: 'The Convention Center & Scuba Shop',
-        city: 'Amsterdam',
-        country: 'Netherlands'
+        address: "The Convention Center & Scuba Shop",
+        city: "Amsterdam",
+        country: "Netherlands"
       }
     },
     {
@@ -25,7 +25,7 @@ export class EventListComponent implements OnInit {
       date: "02/25/2021",
       time: "12:00",
       price: 1000.0,
-      onlineUrl: 'https://ng-nl.org/',
+      onlineUrl: "https://ng-nl.org/"
     },
     {
       id: 4,
@@ -34,9 +34,9 @@ export class EventListComponent implements OnInit {
       time: "8:00:00",
       price: 800.0,
       location: {
-        address: 'The Adavnce Tech Institute',
-        city: 'New York',
-        country: 'United States'
+        address: "The Adavnce Tech Institute",
+        //  city: 'New York',
+        country: "United States"
       }
     },
     {
@@ -46,9 +46,9 @@ export class EventListComponent implements OnInit {
       time: "09:00",
       price: 700.0,
       location: {
-        address: 'Marriot Prime',
-        city: 'Goa',
-        country: 'India'
+        address: "Marriot Prime",
+        city: "Goa",
+        country: "India"
       }
     }
   ];

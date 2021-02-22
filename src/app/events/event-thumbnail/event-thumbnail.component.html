@@ -4,9 +4,14 @@
 		<div>Date: {{events?.date}}</div>
 		<div>Time: {{events?.time}}</div>
 		<div>Price: ${{events?.price}}</div>
-    <div>Online Url: {{events?.onlineUrl}}</div>
+    <div *ngIf="events?.onlineUrl">Online Url: {{events?.onlineUrl}}</div>
 		<div>
-			<span>Location: {{events?.location?.address}}, {{events?.location?.city}}, {{events?.location?.country}}</span>
+			<span *ngIf="events?.location">
+        Location: 
+        <span *ngIf="events.location?.address">{{events?.location?.address}}, </span> 
+        <span *ngIf="events.location?.city">{{events?.location?.city}}, </span> 
+        <span *ngIf="events.location?.country">{{events?.location?.country}}, </span>
+        </span>
 		</div>
 		<button class="btn btn-primary" (click)="handleRegister()">Register</button>
 	</div>
