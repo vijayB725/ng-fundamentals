@@ -1,9 +1,8 @@
 .thumbnail {
   background-color:darkslategrey;
-  min-height: 200px;
-  padding-block: 30px;
-  padding-left: 30px;
+  padding: 20px;
 }
 .pad-left {
-  margin: 15px;
+  margin: 20px;
+  
 }

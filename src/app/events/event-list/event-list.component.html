@@ -2,9 +2,9 @@
 <hr>
 <div class="container px-4 thumbnail">
 	<div class="row gx-5">
-		<app-event-thumbnail class="col-md-5 p-3 border bg-light pad-left" (register)="registerEvent($event)"
-			*ngFor="let e of eventList" [events]="e">
-		</app-event-thumbnail>
+			<div class="p-3 border bg-light col-md-5 pad-left" *ngFor="let e of eventList">
+				<app-event-thumbnail (register)="registerEvent($event)" [events]="e"></app-event-thumbnail>
+			</div>
 	</div>
 </div>
 <hr>
