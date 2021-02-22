@@ -1,0 +1,9 @@
+.thumbnail {
+  background-color:darkslategrey;
+  min-height: 200px;
+  padding-block: 30px;
+  padding-left: 30px;
+}
+.pad-left {
+  margin: 15px;
+}

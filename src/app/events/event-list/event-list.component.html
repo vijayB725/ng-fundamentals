@@ -1,10 +1,23 @@
 <H1> Angular Events</H1>
 <hr>
-<div>
-	<app-event-thumbnail #thumbnailCmp (register)="registerEvent($event)" [events]="eventList"></app-event-thumbnail>
-
+<div class="container px-4 thumbnail">
+	<div class="row gx-5">
+		<app-event-thumbnail class="col-md-5 p-3 border bg-light pad-left" (register)="registerEvent($event)"
+			*ngFor="let e of eventList" [events]="e">
+		</app-event-thumbnail>
+	</div>
 </div>
 <hr>
-{{thumbnailCmp.property}}
+<!--{{thumbnailCmp.property}}-->
 <br>
-<button class="btn btn-primary" (click)="thumbnailCmp.logEvent()">logEvent</button>
+<!--button class="btn btn-primary" (click)="thumbnailCmp.logEvent()">logEvent</button-->
+<div class="container px-4">
+	<div class="row gx-5">
+		<div class="col">
+			<div class="p-3 border bg-light">Custom column padding</div>
+		</div>
+		<div class="col">
+			<div class="p-3 border bg-light">Custom column padding</div>
+		</div>
+	</div>
+</div>
